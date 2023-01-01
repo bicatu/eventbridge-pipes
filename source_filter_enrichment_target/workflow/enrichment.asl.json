@@ -1,0 +1,20 @@
+{
+    "Comment": "Enriches the order with the category data",
+    "StartAt": "Obtain category details",
+    "States": {
+      "Obtain category details": {
+        "Type": "Task",
+        "Resource": "${EnrichFunctionArn}",
+        "Next": "Format result into an array"
+      },
+      "Format result into an array": {
+        "Type": "Pass",
+        "End": true,
+        "Parameters": [
+          {
+            "Item.$": "$.Item"
+          }
+        ]
+      }
+    }
+  }
