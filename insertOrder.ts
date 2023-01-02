@@ -7,7 +7,7 @@ const dbClient = new DynamoDBClient({});
 
 (async () => {
     const order = {
-        id: 1,
+        id: 5,
         items: [
             {
                 sku: 'X',

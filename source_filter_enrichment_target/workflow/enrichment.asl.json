@@ -5,14 +5,17 @@
       "Obtain category details": {
         "Type": "Task",
         "Resource": "${EnrichFunctionArn}",
-        "Next": "Format result into an array"
+        "Next": "Format result into an array",
+        "Parameters": {
+          "order.$": "$.[0].dynamodb.NewImage"
+        }
       },
       "Format result into an array": {
         "Type": "Pass",
         "End": true,
         "Parameters": [
           {
-            "Item.$": "$.Item"
+            "order.$": "$"
           }
         ]
       }

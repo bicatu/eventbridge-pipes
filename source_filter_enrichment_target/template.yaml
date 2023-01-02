@@ -102,7 +102,6 @@ Resources:
                   - 'lambda:InvokeFunction'
                 Resource: !GetAtt EnrichFunction.Arn
 
-
   PipeRole:
     Type: AWS::IAM::Role
     Properties:
@@ -159,4 +158,5 @@ Resources:
         DynamoDBStreamParameters:
           StartingPosition: LATEST
           BatchSize: 1
+      Enrichment: !GetAtt EnrichmentStateMachine.Arn
       Target: !Ref SNSTarget
