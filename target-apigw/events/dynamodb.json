@@ -1,0 +1,33 @@
+{
+    "eventID": "d2b02f215ca5ec665fb3a41c9afd0e8c",
+    "eventName": "INSERT",
+    "eventVersion": "1.1",
+    "eventSource": "aws:dynamodb",
+    "awsRegion": "us-west-2",
+    "dynamodb": {
+        "ApproximateCreationDateTime": 1729796888,
+        "Keys": {
+            "SK": {
+                "S": "3"
+            },
+            "PK": {
+                "S": "3"
+            }
+        },
+        "NewImage": {
+            "SK": {
+                "S": "3"
+            },
+            "PK": {
+                "S": "3"
+            },
+            "data": {
+                "S": "data"
+            }
+        },
+        "SequenceNumber": "82900003706466348681822",
+        "SizeBytes": 12,
+        "StreamViewType": "NEW_AND_OLD_IMAGES"
+    },
+    "eventSourceARN": "arn:aws:dynamodb:us-west-2:252011305655:table/target-apigw-db/stream/2024-10-24T18:42:54.698"
+}

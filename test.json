@@ -1,0 +1,15 @@
+{
+    "id": "XXXXXX",
+    "customer": {
+        "id": "XXXXXX",
+        "name": "Joe Cool",
+        "email": "joe@cool.com"
+    },
+    "items": [
+        {
+            "product": {
+                "sku": "XXXXXX"
+            }
+        }
+    ]
+}
